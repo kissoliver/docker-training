@@ -13,15 +13,13 @@ docker ps
 
 docker images
 
-Konténer műveletek
+Hello world
 --------------------------
 docker run hello-world
 
 docker ps -a
 
 docker images
-
-docker logs <hello world container id>
 
 Image műveletek
 ----------------------
@@ -40,13 +38,15 @@ Konténer indítás paraméterekkel
 ---------------------------------
 docker run -d --name nginx -p 80:80 nginx
 
+docker logs nginx 
+
 docker stats 
 
 docker top nginx 
 
-docker rm -f nginx 
-
 docker exec -it nginx  bash
+
+docker rm -f nginx 
 
 
 Docker image építés
