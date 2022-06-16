@@ -13,6 +13,8 @@ docker ps
 
 docker images
 
+ps -ef | grep dockerd
+
 Hello world
 --------------------------
 docker run hello-world
@@ -61,6 +63,22 @@ run echo hello > /hellofile
 docker build . -t myhello 
 
 docker run myhello cat /hellofile
+
+Podman használata
+------------------
+podman ps
+
+podman images
+
+podman run -d --name nginx -p 80:80 nginx
+
+podman ps 
+
+podman images
+
+podman exec -it nginx sh
+
+podman rm -f nginx
 
 
 
