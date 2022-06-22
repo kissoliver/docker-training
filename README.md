@@ -80,5 +80,13 @@ podman exec -it nginx sh
 
 podman rm -f nginx
 
+Podman podok használata
+-------------------------
+podman pod create --name testpod
 
+podman run -d --pod testpod nginx
+
+podman pod ps
+
+podman ps --pod
 
