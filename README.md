@@ -50,6 +50,11 @@ docker exec -it nginx  bash
 
 docker rm -f nginx 
 
+docker volume használata
+-------------------------
+docker volume create testvolume
+
+docker run -d -v testvolume:/opt nginx
 
 Docker image építés
 --------------------
