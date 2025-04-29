@@ -19,4 +19,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - run: |
         docker build . -t acrretreat2025.azurecr.io/team2/app1:latest
-        docker push    acrretreat2025.azurecr.io/team1/app1:latest
+        docker push    acrretreat2025.azurecr.io/team2/app1:latest
