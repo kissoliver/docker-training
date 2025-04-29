@@ -1,2 +1,2 @@
 FROM alpine
-WORKDIR /app
+WORKDIR /app1
